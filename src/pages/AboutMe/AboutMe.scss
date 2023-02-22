@@ -1,0 +1,48 @@
+.AboutMe{
+    margin: 0;
+    padding: 0;
+
+    .title{
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.05);
+        padding: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        background: #fafafc;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 45px;
+        }
+    }
+
+    article{
+        margin-top: 30px;
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin-bottom: 15px;
+            line-height: 1.5;
+            letter-spacing: .4px;
+            color: rgba(0,0,0,.75);
+            font-size: 18px;
+        }
+        
+        img{
+            margin-top: 30px;
+            padding-top: 0;
+            vertical-align: middle;
+            box-sizing: border-box;
+            max-width: 100%;
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}

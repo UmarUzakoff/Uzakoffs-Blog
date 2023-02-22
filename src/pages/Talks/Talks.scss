@@ -1,0 +1,134 @@
+.Talks{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    .title{
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.05);
+        padding: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        background: #fafafc;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 45px;
+        }
+    }
+
+    article{
+        margin: 0 auto;
+        width: 65%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+
+        #archive {
+            position: relative;
+            width: 80%;
+
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            .list-wrapper {
+                // position: relative;
+                background: #fff;
+                margin: 10px 0;
+                list-style: none;
+
+                li {
+                    line-height: 1.5;
+                    letter-spacing: .4px;
+                    color: rgba(0,0,0,.75);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    
+                    img {
+                        vertical-align: middle;
+                        border-style: none;
+                        height: 110px;
+                        position: relative;
+                        bottom: 10px;
+                    }
+
+                    .list-item {
+                        padding: 10px 0;
+                        position: relative;
+                        border-top: 1px solid #eee;
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+
+                        .date {
+                            color: rgba(0,0,0,.4);
+                            margin-left: 10px;
+                        }
+
+                        .title {
+                            color: rgba(0,0,0,.85);
+                            width: 500px;
+                        }
+                    }
+
+                    .list-item:hover {
+                        margin-top: -10px;
+                        box-shadow: 0 10px 20px 0 rgb(0 0 0 / 8%);
+                        background-size: contain;
+                        opacity: 0.8;
+                        transform: translateX(-10px);
+                        transition: .3s ;
+                        transition-delay: 0.25s;
+                    }
+                }
+
+                li:hover{
+                    background: url(../Blog/images/arrow.svg) no-repeat center center;
+                    background-position-x: right;
+                    background-size: 40px;
+                    background-position: right 55px top 47px;
+                }
+            }
+        }
+
+        .col-md-4 {
+            flex-basis: 30%;
+            max-width: 30%;
+
+            h6 {
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+
+            p{
+                line-height: 1.5;
+                letter-spacing: .4px;
+                color: rgba(0,0,0,.75);
+                margin-top: 0;
+                margin-bottom: 5rem;
+                font-size: 18px;
+
+                .tg{
+                    color: rgb(0, 102, 255);
+                }
+            }
+        }
+    }
+}

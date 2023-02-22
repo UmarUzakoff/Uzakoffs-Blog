@@ -1,0 +1,145 @@
+.Blog{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    .title{
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.05);
+        padding: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        background: #fafafc;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 45px;
+        }
+    }
+
+    article{
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        #archive {
+            position: relative;
+            width: 78%;
+
+            .sticky {
+                display: inline-block;
+                padding: 8px 25px 11px;
+                border-radius: 50px;
+                background: #eee;
+                top: 100px;
+                font-size: 20px;
+                margin-bottom: 20px;
+                z-index: 2;
+                position: sticky;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            .list-wrapper {
+                position: relative;
+                background: #fff;
+                margin: 20px 0 50px;
+                list-style: none;
+
+                li {
+                    margin-top: 45px;
+                    line-height: 1.5;
+                    letter-spacing: .4px;
+                    color: rgba(0,0,0,.75);
+
+                    .list-item {
+                        padding: 20px 0;
+                        display: block;
+                        position: relative;
+                        border-top: 1px solid #eee;
+                        background-color: transparent;
+
+                        .date {
+                            color: rgba(0,0,0,.4);
+                        }
+
+                        .title {
+                            color: rgba(0,0,0,.85);
+                        }
+                    }
+
+                    .list-item:hover {
+                        margin-top: -10px;
+                        box-shadow: 0 10px 20px 0 rgb(0 0 0 / 8%);
+                        background-size: contain;
+                        opacity: 0.8;
+                        transform: translateX(-10px);
+                        transition: .3s ;
+                        transition-delay: 0.25s;
+                    }
+                }
+
+                li:hover{
+                    background: url(./images/arrow.svg) no-repeat center center;
+                    background-position-x: right;
+                    background-size: 40px;
+                    background-position: right 25px top 57px;
+                }
+            }
+
+            .list-wrapper>li:last-child {
+                border-bottom: 1px solid #eee;
+            }
+        }
+
+        .col-md-4 {
+            flex-basis: 30%;
+            max-width: 30%;
+
+            h6 {
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+
+            p{
+                line-height: 1.5;
+                letter-spacing: .4px;
+                color: rgba(0,0,0,.75);
+                margin-top: 0;
+                margin-bottom: 5rem;
+                font-size: 18px;
+
+                .tg{
+                    color: rgb(0, 102, 255);
+                }
+            }
+        }
+    }
+}
+  
+  .fancy {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
